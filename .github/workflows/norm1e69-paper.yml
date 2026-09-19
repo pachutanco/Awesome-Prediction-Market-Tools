@@ -1,0 +1,68 @@
+name: norm1e69 paper test
+
+on:
+  push:
+    paths:
+      - "experiments/polymarket-paper/paper.js"
+      - ".github/workflows/norm1e69-paper.yml"
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: norm1e69-paper
+  cancel-in-progress: false
+
+jobs:
+  paper:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Check whether 48h gate is already complete
+        id: gate
+        shell: bash
+        run: |
+          STATUS=$(node -e "try{const r=require('./experiments/polymarket-paper/report.json');console.log(r.gate||r.status||'RUNNING')}catch{console.log('RUNNING')}")
+          if [ "$STATUS" = "PASS_CANDIDATE" ] || [ "$STATUS" = "FAIL" ]; then
+            echo "done=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "done=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run live paper engine
+        if: steps.gate.outputs.done != 'true'
+        env:
+          RUN_SECONDS: "220"
+          SAMPLE_SECONDS: "10"
+          QUOTE_SIZE: "5"
+          MAX_INV: "25"
+          PAPER_CAPITAL: "1000"
+        run: node experiments/polymarket-paper/paper.js
+
+      - name: Persist paper state
+        if: steps.gate.outputs.done != 'true'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add experiments/polymarket-paper/state.json \
+                  experiments/polymarket-paper/report.json \
+                  experiments/polymarket-paper/snapshots.jsonl
+          if git diff --cached --quiet; then
+            echo "No paper-state changes"
+            exit 0
+          fi
+          git commit -m "paper: update norm1e69 experiment state"
+          git pull --rebase origin main
+          git push origin HEAD:main
