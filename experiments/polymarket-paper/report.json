@@ -1,1 +1,28 @@
-{"status":"NOT_STARTED","note":"Workflow will initialize this on first run."}
+{
+  "updatedAt": "2026-09-19T21:04:15.391Z",
+  "startedAt": "2026-09-19T21:00:35.273Z",
+  "elapsedHours": 0.06,
+  "samples": 66,
+  "marketsSeen": 3,
+  "gate": "RUNNING",
+  "gateRules": {
+    "minHours": 48,
+    "minMarkets": 200,
+    "minProfitFactor": 1.15,
+    "maxDrawdownPct": 10,
+    "positiveNetPnl": true
+  },
+  "makerInventory": {
+    "realizedPnl": -0.05,
+    "profitFactor": 0,
+    "maxDrawdownPct": 0.005,
+    "fills": 4
+  },
+  "takerPair": {
+    "realizedPnl": 0,
+    "profitFactor": 0,
+    "fills": 0,
+    "marketsEntered": 0
+  },
+  "note": "Paper only. No wallet keys, signing, deposits, or real orders are used."
+}
