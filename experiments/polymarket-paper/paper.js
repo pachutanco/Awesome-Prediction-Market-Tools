@@ -24,7 +24,13 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const nowIso = () => new Date().toISOString();
 
 function loadState() {
-  if (fs.existsSync(STATE_PATH)) return JSON.parse(fs.readFileSync(STATE_PATH, "utf8"));
+  if (fs.existsSync(STATE_PATH)) {
+    const existing = JSON.parse(fs.readFileSync(STATE_PATH, "utf8"));
+    if (!existing.startedAt) existing.startedAt = nowIso();
+    existing.strategies.maker_inventory.quotes ||= {};
+    existing.strategies.taker_pair.entered ||= {};
+    return existing;
+  }
   return {
     version: 1,
     startedAt: nowIso(),
