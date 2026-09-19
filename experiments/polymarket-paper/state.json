@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "startedAt": null,
+  "samples": 0,
+  "marketsSeen": {},
+  "settled": {},
+  "lastBooks": {},
+  "strategies": {
+    "maker_inventory": {"realizedPnl":0,"grossProfit":0,"grossLoss":0,"fills":0,"positions":{},"quotes":{},"equityCurve":[]},
+    "taker_pair": {"realizedPnl":0,"grossProfit":0,"grossLoss":0,"fills":0,"positions":{},"entered":{},"equityCurve":[]}
+  }
+}
