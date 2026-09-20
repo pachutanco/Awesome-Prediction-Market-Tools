@@ -1,7 +1,7 @@
 {
   "version": 1,
   "startedAt": "2026-09-19T21:00:35.273Z",
-  "samples": 1716,
+  "samples": 1782,
   "marketsSeen": {
     "btc-updown-5m-1789851600": {
       "asset": "BTC",
@@ -572,6 +572,21 @@
       "asset": "BTC",
       "firstSeen": "2026-09-20T01:36:07.805Z",
       "lastSeen": "2026-09-20T01:39:37.801Z"
+    },
+    "btc-updown-5m-1789868700": {
+      "asset": "BTC",
+      "firstSeen": "2026-09-20T01:45:54.116Z",
+      "lastSeen": "2026-09-20T01:49:24.247Z"
+    },
+    "eth-updown-5m-1789868700": {
+      "asset": "ETH",
+      "firstSeen": "2026-09-20T01:45:54.125Z",
+      "lastSeen": "2026-09-20T01:49:24.257Z"
+    },
+    "sol-updown-5m-1789868700": {
+      "asset": "SOL",
+      "firstSeen": "2026-09-20T01:45:54.128Z",
+      "lastSeen": "2026-09-20T01:49:24.231Z"
     }
   },
   "settled": {
@@ -1351,15 +1366,36 @@
         "up": 0,
         "down": 1
       }
+    },
+    "sol-updown-5m-1789868100": {
+      "ts": "2026-09-20T01:45:53.851Z",
+      "prices": {
+        "up": 1,
+        "down": 0
+      }
+    },
+    "eth-updown-5m-1789868100": {
+      "ts": "2026-09-20T01:45:53.878Z",
+      "prices": {
+        "up": 0,
+        "down": 1
+      }
+    },
+    "btc-updown-5m-1789868100": {
+      "ts": "2026-09-20T01:45:53.903Z",
+      "prices": {
+        "up": 1,
+        "down": 0
+      }
     }
   },
   "lastBooks": {},
   "strategies": {
     "maker_inventory": {
-      "realizedPnl": -29.857499999999995,
-      "grossProfit": 35.92,
-      "grossLoss": 65.7775,
-      "fills": 88,
+      "realizedPnl": -27.807499999999997,
+      "grossProfit": 38.27,
+      "grossLoss": 66.0775,
+      "fills": 92,
       "positions": {
         "btc-updown-5m-1789851600": {
           "up": {
@@ -2477,8 +2513,8 @@
             "avg": 0
           },
           "down": {
-            "qty": 5,
-            "avg": 0.06000000000000001
+            "qty": 0,
+            "avg": 0
           }
         },
         "eth-updown-5m-1789868100": {
@@ -2495,6 +2531,36 @@
           "up": {
             "qty": 0,
             "avg": 0
+          },
+          "down": {
+            "qty": 0,
+            "avg": 0
+          }
+        },
+        "btc-updown-5m-1789868700": {
+          "up": {
+            "qty": 0,
+            "avg": 0
+          },
+          "down": {
+            "qty": 0,
+            "avg": 0
+          }
+        },
+        "eth-updown-5m-1789868700": {
+          "up": {
+            "qty": 0,
+            "avg": 0
+          },
+          "down": {
+            "qty": 5,
+            "avg": 0.95
+          }
+        },
+        "sol-updown-5m-1789868700": {
+          "up": {
+            "qty": 5,
+            "avg": 0.09
           },
           "down": {
             "qty": 0,
@@ -3642,6 +3708,36 @@
             "buy": null,
             "sell": null
           }
+        },
+        "btc-updown-5m-1789868700": {
+          "up": {
+            "buy": null,
+            "sell": null
+          },
+          "down": {
+            "buy": null,
+            "sell": null
+          }
+        },
+        "eth-updown-5m-1789868700": {
+          "up": {
+            "buy": null,
+            "sell": null
+          },
+          "down": {
+            "buy": null,
+            "sell": null
+          }
+        },
+        "sol-updown-5m-1789868700": {
+          "up": {
+            "buy": null,
+            "sell": 0.06999999999999999
+          },
+          "down": {
+            "buy": 0.916,
+            "sell": null
+          }
         }
       },
       "equityCurve": [
@@ -3748,6 +3844,10 @@
         {
           "ts": "2026-09-20T01:39:47.665Z",
           "realizedPnl": -29.857499999999995
+        },
+        {
+          "ts": "2026-09-20T01:49:34.017Z",
+          "realizedPnl": -27.807499999999997
         }
       ]
     },
@@ -3861,6 +3961,10 @@
         },
         {
           "ts": "2026-09-20T01:39:47.665Z",
+          "realizedPnl": 0
+        },
+        {
+          "ts": "2026-09-20T01:49:34.017Z",
           "realizedPnl": 0
         }
       ]
