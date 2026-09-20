@@ -1,7 +1,7 @@
 {
   "version": 1,
   "startedAt": "2026-09-19T21:00:35.273Z",
-  "samples": 3960,
+  "samples": 4026,
   "marketsSeen": {
     "btc-updown-5m-1789851600": {
       "asset": "BTC",
@@ -1352,6 +1352,21 @@
       "asset": "BTC",
       "firstSeen": "2026-09-20T08:06:03.870Z",
       "lastSeen": "2026-09-20T08:09:33.818Z"
+    },
+    "eth-updown-5m-1789892400": {
+      "asset": "ETH",
+      "firstSeen": "2026-09-20T08:21:17.182Z",
+      "lastSeen": "2026-09-20T08:24:47.283Z"
+    },
+    "btc-updown-5m-1789892400": {
+      "asset": "BTC",
+      "firstSeen": "2026-09-20T08:21:17.203Z",
+      "lastSeen": "2026-09-20T08:24:47.279Z"
+    },
+    "sol-updown-5m-1789892400": {
+      "asset": "SOL",
+      "firstSeen": "2026-09-20T08:21:17.222Z",
+      "lastSeen": "2026-09-20T08:24:47.294Z"
     }
   },
   "settled": {
@@ -3223,15 +3238,36 @@
         "up": 0.9995,
         "down": 0.0005
       }
+    },
+    "eth-updown-5m-1789891500": {
+      "ts": "2026-09-20T08:21:16.844Z",
+      "prices": {
+        "up": 0,
+        "down": 1
+      }
+    },
+    "sol-updown-5m-1789891500": {
+      "ts": "2026-09-20T08:21:16.910Z",
+      "prices": {
+        "up": 0,
+        "down": 1
+      }
+    },
+    "btc-updown-5m-1789891500": {
+      "ts": "2026-09-20T08:21:16.939Z",
+      "prices": {
+        "up": 0,
+        "down": 1
+      }
     }
   },
   "lastBooks": {},
   "strategies": {
     "maker_inventory": {
-      "realizedPnl": -71.2375,
-      "grossProfit": 84.81,
-      "grossLoss": 156.0475,
-      "fills": 200,
+      "realizedPnl": -70.8475,
+      "grossProfit": 85.51,
+      "grossLoss": 156.35750000000002,
+      "fills": 201,
       "positions": {
         "btc-updown-5m-1789851600": {
           "up": {
@@ -5905,18 +5941,18 @@
         },
         "eth-updown-5m-1789891500": {
           "up": {
-            "qty": 5,
-            "avg": 0.06000000000000001
+            "qty": 0,
+            "avg": 0
           },
           "down": {
-            "qty": 5,
-            "avg": 0.86
+            "qty": 0,
+            "avg": 0
           }
         },
         "sol-updown-5m-1789891500": {
           "up": {
-            "qty": 5,
-            "avg": 0.002
+            "qty": 0,
+            "avg": 0
           },
           "down": {
             "qty": 0,
@@ -5927,6 +5963,36 @@
           "up": {
             "qty": 0,
             "avg": 0
+          },
+          "down": {
+            "qty": 0,
+            "avg": 0
+          }
+        },
+        "eth-updown-5m-1789892400": {
+          "up": {
+            "qty": 0,
+            "avg": 0
+          },
+          "down": {
+            "qty": 0,
+            "avg": 0
+          }
+        },
+        "btc-updown-5m-1789892400": {
+          "up": {
+            "qty": 0,
+            "avg": 0
+          },
+          "down": {
+            "qty": 0,
+            "avg": 0
+          }
+        },
+        "sol-updown-5m-1789892400": {
+          "up": {
+            "qty": 5,
+            "avg": 0.09999999999999999
           },
           "down": {
             "qty": 0,
@@ -8634,6 +8700,36 @@
             "buy": null,
             "sell": null
           }
+        },
+        "eth-updown-5m-1789892400": {
+          "up": {
+            "buy": null,
+            "sell": null
+          },
+          "down": {
+            "buy": null,
+            "sell": null
+          }
+        },
+        "btc-updown-5m-1789892400": {
+          "up": {
+            "buy": null,
+            "sell": null
+          },
+          "down": {
+            "buy": null,
+            "sell": null
+          }
+        },
+        "sol-updown-5m-1789892400": {
+          "up": {
+            "buy": null,
+            "sell": null
+          },
+          "down": {
+            "buy": null,
+            "sell": null
+          }
         }
       },
       "equityCurve": [
@@ -8876,6 +8972,10 @@
         {
           "ts": "2026-09-20T08:09:43.582Z",
           "realizedPnl": -71.2375
+        },
+        {
+          "ts": "2026-09-20T08:24:57.054Z",
+          "realizedPnl": -70.8475
         }
       ]
     },
@@ -9125,6 +9225,10 @@
         },
         {
           "ts": "2026-09-20T08:09:43.582Z",
+          "realizedPnl": 0
+        },
+        {
+          "ts": "2026-09-20T08:24:57.054Z",
           "realizedPnl": 0
         }
       ]
