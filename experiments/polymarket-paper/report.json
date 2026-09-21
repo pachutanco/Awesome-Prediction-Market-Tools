@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-21T08:43:43.069Z",
+  "updatedAt": "2026-09-21T08:55:04.625Z",
   "startedAt": "2026-09-19T21:00:35.273Z",
-  "elapsedHours": 35.72,
-  "samples": 12403,
-  "marketsSeen": 941,
+  "elapsedHours": 35.91,
+  "samples": 12469,
+  "marketsSeen": 944,
   "gate": "RUNNING",
   "gateRules": {
     "minHours": 48,
@@ -13,10 +13,10 @@
     "positiveNetPnl": true
   },
   "makerInventory": {
-    "realizedPnl": -312.185,
-    "profitFactor": 0.471,
-    "maxDrawdownPct": 31.509,
-    "fills": 702
+    "realizedPnl": -318.435,
+    "profitFactor": 0.466,
+    "maxDrawdownPct": 31.844,
+    "fills": 707
   },
   "takerPair": {
     "realizedPnl": 0.1868,
