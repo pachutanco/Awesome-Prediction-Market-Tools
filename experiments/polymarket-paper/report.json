@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-21T05:22:03.157Z",
+  "updatedAt": "2026-09-21T05:35:16.523Z",
   "startedAt": "2026-09-19T21:00:35.273Z",
-  "elapsedHours": 32.36,
-  "samples": 11479,
-  "marketsSeen": 866,
+  "elapsedHours": 32.58,
+  "samples": 11545,
+  "marketsSeen": 872,
   "gate": "RUNNING",
   "gateRules": {
     "minHours": 48,
@@ -13,16 +13,16 @@
     "positiveNetPnl": true
   },
   "makerInventory": {
-    "realizedPnl": -289.4325,
-    "profitFactor": 0.476,
-    "maxDrawdownPct": 28.943,
-    "fills": 660
+    "realizedPnl": -290.4325,
+    "profitFactor": 0.478,
+    "maxDrawdownPct": 29.043,
+    "fills": 662
   },
   "takerPair": {
     "realizedPnl": 0,
     "profitFactor": 0,
-    "fills": 0,
-    "marketsEntered": 0
+    "fills": 2,
+    "marketsEntered": 1
   },
   "note": "Paper only. No wallet keys, signing, deposits, or real orders are used."
 }
