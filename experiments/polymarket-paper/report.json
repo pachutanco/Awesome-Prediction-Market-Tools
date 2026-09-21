@@ -1,9 +1,9 @@
 {
-  "updatedAt": "2026-09-21T08:30:28.332Z",
+  "updatedAt": "2026-09-21T08:43:43.069Z",
   "startedAt": "2026-09-19T21:00:35.273Z",
-  "elapsedHours": 35.5,
-  "samples": 12337,
-  "marketsSeen": 938,
+  "elapsedHours": 35.72,
+  "samples": 12403,
+  "marketsSeen": 941,
   "gate": "RUNNING",
   "gateRules": {
     "minHours": 48,
@@ -16,7 +16,7 @@
     "realizedPnl": -312.185,
     "profitFactor": 0.471,
     "maxDrawdownPct": 31.509,
-    "fills": 700
+    "fills": 702
   },
   "takerPair": {
     "realizedPnl": 0.1868,
