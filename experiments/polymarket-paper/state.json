@@ -1,7 +1,7 @@
 {
   "version": 1,
   "startedAt": "2026-09-19T21:00:35.273Z",
-  "samples": 14185,
+  "samples": 14251,
   "marketsSeen": {
     "btc-updown-5m-1789851600": {
       "asset": "BTC",
@@ -5382,6 +5382,21 @@
       "asset": "ETH",
       "firstSeen": "2026-09-21T14:16:01.000Z",
       "lastSeen": "2026-09-21T14:19:30.996Z"
+    },
+    "eth-updown-5m-1790001000": {
+      "asset": "ETH",
+      "firstSeen": "2026-09-21T14:30:17.780Z",
+      "lastSeen": "2026-09-21T14:33:47.807Z"
+    },
+    "btc-updown-5m-1790001000": {
+      "asset": "BTC",
+      "firstSeen": "2026-09-21T14:30:17.807Z",
+      "lastSeen": "2026-09-21T14:33:47.779Z"
+    },
+    "sol-updown-5m-1790001000": {
+      "asset": "SOL",
+      "firstSeen": "2026-09-21T14:30:17.818Z",
+      "lastSeen": "2026-09-21T14:33:47.782Z"
     }
   },
   "settled": {
@@ -12895,15 +12910,36 @@
         "up": 0,
         "down": 1
       }
+    },
+    "sol-updown-5m-1790000100": {
+      "ts": "2026-09-21T14:30:17.362Z",
+      "prices": {
+        "up": 1,
+        "down": 0
+      }
+    },
+    "btc-updown-5m-1790000100": {
+      "ts": "2026-09-21T14:30:17.414Z",
+      "prices": {
+        "up": 1,
+        "down": 0
+      }
+    },
+    "eth-updown-5m-1790000100": {
+      "ts": "2026-09-21T14:30:17.446Z",
+      "prices": {
+        "up": 1,
+        "down": 0
+      }
     }
   },
   "lastBooks": {},
   "strategies": {
     "maker_inventory": {
-      "realizedPnl": -367.05500000000006,
+      "realizedPnl": -368.1550000000001,
       "grossProfit": 321.8950000000001,
-      "grossLoss": 688.9500000000006,
-      "fills": 823,
+      "grossLoss": 690.0500000000006,
+      "fills": 826,
       "positions": {
         "btc-updown-5m-1789851600": {
           "up": {
@@ -23641,8 +23677,8 @@
             "avg": 0
           },
           "down": {
-            "qty": 5,
-            "avg": 0.22000000000000003
+            "qty": 0,
+            "avg": 0
           }
         },
         "btc-updown-5m-1790000100": {
@@ -23663,6 +23699,36 @@
           "down": {
             "qty": 0,
             "avg": 0
+          }
+        },
+        "eth-updown-5m-1790001000": {
+          "up": {
+            "qty": 0,
+            "avg": 0
+          },
+          "down": {
+            "qty": 5,
+            "avg": 0.75
+          }
+        },
+        "btc-updown-5m-1790001000": {
+          "up": {
+            "qty": 0,
+            "avg": 0
+          },
+          "down": {
+            "qty": 5,
+            "avg": 0.2
+          }
+        },
+        "sol-updown-5m-1790001000": {
+          "up": {
+            "qty": 0,
+            "avg": 0
+          },
+          "down": {
+            "qty": 5,
+            "avg": 0.75
           }
         }
       },
@@ -34426,6 +34492,36 @@
             "buy": null,
             "sell": null
           }
+        },
+        "eth-updown-5m-1790001000": {
+          "up": {
+            "buy": null,
+            "sell": null
+          },
+          "down": {
+            "buy": null,
+            "sell": null
+          }
+        },
+        "btc-updown-5m-1790001000": {
+          "up": {
+            "buy": null,
+            "sell": null
+          },
+          "down": {
+            "buy": null,
+            "sell": null
+          }
+        },
+        "sol-updown-5m-1790001000": {
+          "up": {
+            "buy": null,
+            "sell": null
+          },
+          "down": {
+            "buy": null,
+            "sell": null
+          }
         }
       },
       "equityCurve": [
@@ -35288,6 +35384,10 @@
         {
           "ts": "2026-09-21T14:19:40.868Z",
           "realizedPnl": -367.05500000000006
+        },
+        {
+          "ts": "2026-09-21T14:33:57.564Z",
+          "realizedPnl": -368.1550000000001
         }
       ]
     },
@@ -36175,6 +36275,10 @@
         },
         {
           "ts": "2026-09-21T14:19:40.868Z",
+          "realizedPnl": 0.18679500000000027
+        },
+        {
+          "ts": "2026-09-21T14:33:57.564Z",
           "realizedPnl": 0.18679500000000027
         }
       ]
